@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: ghostwhite;
+            margin: 0;
+            padding: 0;
+        }
+
+        .img {
+            width: 100%;
+            height: 180px;
+        }
+        
+        .img2 {
+            width: 250px;
+            height: 180px;
+        }
+        
+        .img3 {
+            width: 250px;
+            height: 180px;
+        }
+        
+        .img4 {
+            width: 250px;
+            height: 180px;
+        }
+        
+        .img5 {
+            width: 250px;
+            height: 200px;
+        }
+        
+        .img6 {
+            width: 250px;
+            height: 200px;
+        }
+            
+
+        header {
+            background-color: darkseagreen;
+            color: black;
+            text-align: center;
+            padding: 1em;
+            height: 90px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 16px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .artwork {
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            width: 250px; /* Ajusta el ancho según tus necesidades */
+        }
+
+        .artwork:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: darkseagreen;
+            color: black;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+        }
+
+        /* Media Queries para hacer responsive el diseño */
+        @media only screen and (max-width: 600px) {
+            .artwork {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GALERIA KIMETSU NO YAIBA</h1>
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="artistas.html">ARTISTAS</a>
+            <a href="A%20yo.html">CONTACTO</a>
+        </nav>
+    </header>
+
+    <div class="gallery">
+        <!-- Imágenes de la galería -->
+        <div class="artwork">
+            <img src="https://areajugones.sport.es/wp-content/uploads/2022/04/kimetsu-arte-japones-1-1080x609.jpg" class="img" alt="Obra de arte 1">
+            <p>LA ERA TAISHO</p>
+            
+        </div>
+            <div class="artwork">
+            <img src="https://m.media-amazon.com/images/I/71Pz7J+RgIS.jpg" class="img2" alt="Obra de arte 2">
+            <p>REALIDADES DIFERENTES</p>
+        </div>
+        
+        <div class="artwork">
+            <img src="https://m.media-amazon.com/images/I/71+qbdJJ6xL._AC_UF894,1000_QL80_.jpg" class="img3" alt="Obra de arte 3">
+            <p>INQUEBRANTABLE</p>
+        </div>
+        
+        <div class="artwork">
+            <img src="https://m.media-amazon.com/images/I/71+9VlWnhlL._AC_UF350,350_QL80_.jpg" class="img4" alt="Obra de arte 4">
+            <p>ALIENTO DEL INSECTO</p>
+        </div>
+        
+        <div class="artwork">
+            <img src="https://m.media-amazon.com/images/I/71mbi4llC1L.jpg" class="img5" alt="Obra de arte 5">
+            <p>NAMU AMIDA BUTSU</p>
+        </div>
+        
+        <div class="artwork">
+            <img src="https://m.media-amazon.com/images/I/712IgiqEJQL._AC_UF894,1000_QL80_.jpg" class="img6" alt="Obra de arte 6">
+            <p>ESTILO ANTE TODO</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Galería de Arte</p>
+    </footer>
+
+</body>
+</html>
